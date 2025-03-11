@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Rovhul</title>
+    <style>
+      #threejs-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/Ajax/libs/three.js/0.172.0/three.min.js"></script>
+    <script src="{{ '/assets/js/threejs-example.js' | relative_url }}"></script>
+  </head>
+  <body>
+    <div id="threejs-container"></div>
+    {{ content }}
+  </body>
+</html>
