@@ -1,22 +1,42 @@
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset and full-screen styling */
+* {
     margin: 0;
-    padding: 20px;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    /* Remove the conflicting styles */
+    max-width: none;
+    padding: 0;
+    margin: 0;
 }
 
 #app {
-    margin-top: 30px;
+    width: 100%;
+    height: 100%;
 }
 
-h1 {
-    color: #2c3e50;
+#three-container {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
+/* Hide any scrollbars */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Keep these button styles in case you need UI later */
 button {
     background-color: #3498db;
     color: white;
@@ -30,10 +50,4 @@ button {
 
 button:hover {
     background-color: #2980b9;
-}
-
-#three-container {
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
 } 
